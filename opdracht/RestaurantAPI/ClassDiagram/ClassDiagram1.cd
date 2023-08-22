@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RestaurantBL.Models.Controleer" Collapsed="true">
+    <Position X="20" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Controleer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantBL.Models.Locatie" Collapsed="true">
+    <Position X="17.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAABAAAAAAAAABAACAAEAAAgAAgAAACAA=</HashCode>
+      <FileName>Models\Locatie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantBL.Models.LocatieExcepiton" Collapsed="true">
+    <Position X="22.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LocatieExcepiton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantBL.Models.Tafel" Collapsed="true">
+    <Position X="16.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAEAgABAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Tafel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantBL.Models.TafelException" Collapsed="true">
+    <Position X="22.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TafelException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gebruiker" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAIgAAAANAAAAAAAAEIAAAAAAAAAAAM=</HashCode>
+      <FileName>Models\Gebruiker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Locatie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Reservatie" Collapsed="true">
+    <Position X="16.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAACABAEAABAgAAAAAAAAAACEYQgAgAgAAAAAIA=</HashCode>
+      <FileName>Models\Reservatie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Gebruiker" />
+      <Property Name="Restaurant" />
+      <Property Name="Tafel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Restaurant" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQACAIAAADAAgAIAUAgAhAAAAAAABEAAAAAAQAAAACM=</HashCode>
+      <FileName>Models\Restaurant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Locatie" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GebruikerException" Collapsed="true">
+    <Position X="22.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\GebruikerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReservatieException" Collapsed="true">
+    <Position X="22.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ReservatieException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantException" Collapsed="true">
+    <Position X="22.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\RestaurantException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantBL.Exceptions.GebruikerServiceException" Collapsed="true">
+    <Position X="12.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\GebruikerServiceException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantBL.Exceptions.ReservatieServiceException" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ReservatieServiceException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantDL.Repositories.GebruikerRepositoryADO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\GebruikerRepositoryADO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RestaurantDL.Repositories.LocatieRepositoryADO" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\LocatieRepositoryADO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantDL.Repositories.ReservatieRepositoryADO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ReservatieRepositoryADO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RestaurantDL.Repositories.RestaurantRepositoryADO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\RestaurantRepositoryADO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RestaurantBL.Services.GebruikerService" Collapsed="true">
+    <Position X="1.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACABACAAAAAACAAAAAAAAAAAAAAAAACAAAAABAAA=</HashCode>
+      <FileName>Services\GebruikerService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_gebruikerRepo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestaurantBL.Services.LocatieService" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\LocatieService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_locatieRepository" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestaurantBL.Services.ReservatieService" Collapsed="true">
+    <Position X="10.5" Y="3" Width="1.5" />
+    <AssociationLine Name="_restaurantRepo" Type="RestaurantBL.Interfaces.IRestaurantRepository" ManuallyRouted="true">
+      <Path>
+        <Point X="10.5" Y="3.468" />
+        <Point X="9.974" Y="3.468" />
+        <Point X="9.974" Y="2.464" />
+        <Point X="8.906" Y="2.464" />
+        <Point X="8.906" Y="2.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEAAAAAACIYAAAAAAEAAAAABAAABAAAAAACA=</HashCode>
+      <FileName>Services\ReservatieService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_reservatieRepo" />
+      <Field Name="_restaurantRepo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestaurantBL.Services.RestaurantService" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAgAAAIBAIAQAAAABCIAAABBBAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\RestaurantService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_restaurantRepo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AdresbeheerREST.Mappers.MapException" Collapsed="true">
+    <Position X="4.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappers\MapException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdresbeheerREST.Mappers.MapFromDomain" Collapsed="true">
+    <Position X="4.25" Y="9" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAkAEAAAhAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mappers\MapFromDomain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdresbeheerREST.Mappers.MapToDomain" Collapsed="true">
+    <Position X="4.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEgIAAAAiCAAAAAAAAAAAAAAAAAAAACAABAAAAAA=</HashCode>
+      <FileName>Mappers\MapToDomain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Mappers.MapToList" Collapsed="true">
+    <Position X="4.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAgAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Mappers\MapToList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Mappers.MapToListDomain" Collapsed="true">
+    <Position X="4.25" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Mappers\MapToListDomain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.Restaurant.Reservatie.ReservatieRESTinputDTO" Collapsed="true">
+    <Position X="0.75" Y="17.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAACAAAgAAAEAAAAAAA=</HashCode>
+      <FileName>Model\Input\Restaurant\Reservatie\ReservatieRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.Restaurant.Reservatie.ReservatieUpdateRESTinputDTO" Collapsed="true">
+    <Position X="6.5" Y="17.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Input\Restaurant\Reservatie\ReservatieUpdateRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.Restaurant.Tafel.TafelListRESTinputDTO" Collapsed="true">
+    <Position X="7.25" Y="18.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Input\Restaurant\Tafel\TafelListRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.Restaurant.Tafel.TafelRESTinputDTO" Collapsed="true">
+    <Position X="0.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Input\Restaurant\Tafel\TafelRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.Restaurant.Tafel.TafelUpdateRESTinputDTO" Collapsed="true">
+    <Position X="4.5" Y="18.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Input\Restaurant\Tafel\TafelUpdateRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.Restaurant.RestaurantRESTinputDTO" Collapsed="true">
+    <Position X="0.75" Y="16.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAAAAAAAABAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\Input\Restaurant\RestaurantRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.Restaurant.RestaurantUpdateRESTinputDTO" Collapsed="true">
+    <Position X="6.5" Y="16.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAAAAAAAABAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\Input\Restaurant\RestaurantUpdateRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.GebruikerRESTinputDTO" Collapsed="true">
+    <Position X="0.75" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAABAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Input\GebruikerRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Input.LocatieRESTinputDTO" Collapsed="true">
+    <Position X="0.75" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAACAAAAAAAAAgAAACAA=</HashCode>
+      <FileName>Model\Input\LocatieRESTinputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Output.GebruikerRESToutputDTO" Collapsed="true">
+    <Position X="3.75" Y="15" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAAAABQAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Output\GebruikerRESToutputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Output.LocatieRESToutputDTO" Collapsed="true">
+    <Position X="3.75" Y="13.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAABAAAAAAAAAAAACAAAAAAAAAgAAACAA=</HashCode>
+      <FileName>Model\Output\LocatieRESToutputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Output.ReservatieRESToutputDTO" Collapsed="true">
+    <Position X="3.75" Y="17.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAEQAAAAAAAAAAAAAICAIAgAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Output\ReservatieRESToutputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Output.RestaurantListRESToutputDTO" Collapsed="true">
+    <Position X="9.5" Y="16.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAABAAAAAAAAAAhAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Output\RestaurantListRESToutputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Output.RestaurantRESToutputDTO" Collapsed="true">
+    <Position X="3.75" Y="16.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAADAAAAAAEAAABABAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\Output\RestaurantRESToutputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Output.TafelListRESToutputDTO" Collapsed="true">
+    <Position X="9.5" Y="18.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Model\Output\TafelListRESToutputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Model.Output.TafelRESToutputDTO" Collapsed="true">
+    <Position X="2.5" Y="18.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Model\Output\TafelRESToutputDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestaurantAPI.Controllers.GebruikerController">
+    <Position X="1" Y="8.75" Width="2" />
+    <AssociationLine Name="_restaurantService" Type="RestaurantBL.Services.RestaurantService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.938" Y="8.75" />
+        <Point X="1.938" Y="7.509" />
+        <Point X="7.656" Y="7.509" />
+        <Point X="7.656" Y="3.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_gebruikerService" Type="RestaurantBL.Services.GebruikerService" FixedFromPoint="true">
+      <Path>
+        <Point X="1.688" Y="8.75" />
+        <Point X="1.688" Y="3.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_reservatieService" Type="RestaurantBL.Services.ReservatieService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="8.75" />
+        <Point X="2.25" Y="7.813" />
+        <Point X="8.042" Y="7.813" Type="JumpStart" />
+        <Point X="8.208" Y="7.813" Type="JumpEnd" />
+        <Point X="10.22" Y="7.813" Type="JumpStart" />
+        <Point X="10.387" Y="7.813" Type="JumpEnd" />
+        <Point X="10.938" Y="7.813" />
+        <Point X="10.938" Y="3.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>hAABIAAAAAgQBBAAAAAACBAAIAAAAACAAQAAAAAAIAg=</HashCode>
+      <FileName>Controllers\GebruikerController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_restaurantService" />
+      <Field Name="_gebruikerService" />
+      <Field Name="_reservatieService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestaurantAPI.Controllers.RestaurantController">
+    <Position X="8.25" Y="8.75" Width="3.25" />
+    <AssociationLine Name="_gebruikerService" Type="RestaurantBL.Services.GebruikerService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.304" Y="8.75" />
+        <Point X="10.304" Y="6.304" />
+        <Point X="8.208" Y="6.304" Type="JumpStart" />
+        <Point X="8.042" Y="6.304" Type="JumpEnd" />
+        <Point X="7.74" Y="6.304" Type="JumpStart" />
+        <Point X="7.573" Y="6.304" Type="JumpEnd" />
+        <Point X="2.562" Y="6.304" />
+        <Point X="2.562" Y="3.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_reservatieService" Type="RestaurantBL.Services.ReservatieService" FixedToPoint="true">
+      <Path>
+        <Point X="11.188" Y="8.75" />
+        <Point X="11.188" Y="3.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_restaurantService" Type="RestaurantBL.Services.RestaurantService" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.625" Y="8.75" />
+        <Point X="8.625" Y="8.375" />
+        <Point X="8.125" Y="8.375" />
+        <Point X="8.125" Y="3.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>hAABYIAAAAAAAAAAAAAACAAAIAAAAAAAAEAAACEAIAA=</HashCode>
+      <FileName>Controllers\RestaurantController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_gebruikerService" />
+      <Field Name="_reservatieService" />
+      <Field Name="_restaurantService" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="RestaurantBL.Interfaces.IGebruikerRepository" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAACAAAAAAAAAAAAAAAAAACAAAAACAAAAABQAA=</HashCode>
+      <FileName>Interfaces\IGebruikerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RestaurantBL.Interfaces.ILocatieRepository" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Interfaces\ILocatieRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RestaurantBL.Interfaces.IReservatieRepository" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IReservatieRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RestaurantBL.Interfaces.IRestaurantRepository" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAMAAAgAAAoBAIAAAAAAAAIAABBABAAABAAAAAQAA=</HashCode>
+      <FileName>Interfaces\IRestaurantRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

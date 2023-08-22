@@ -1,0 +1,13 @@
+CREATE TABLE gebruiker (klant_nr int(10) NOT NULL AUTO_INCREMENT, naam varchar(255) NOT NULL, email varchar(255) NOT NULL, telefoon_nr varchar(255) NOT NULL, locatie varchar(255) NOT NULL, Locatieid int(10) NOT NULL, PRIMARY KEY (klant_nr));
+CREATE TABLE reservatie (reseratie_nr int(10) NOT NULL AUTO_INCREMENT, aantal_plaatsen int(10) NOT NULL, datum timestamp NULL, contact_persoon_id int(10) NOT NULL, restaurant_id int(10) NOT NULL, tafel_id int(10) NOT NULL, PRIMARY KEY (reseratie_nr));
+CREATE TABLE restaurant (id int(10) NOT NULL AUTO_INCREMENT, naam varchar(255) NOT NULL, locatie varchar(255) NOT NULL, keuken varchar(255) NOT NULL, contact_gegevens varchar(255) NOT NULL, Locatieid int(10) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE tafel (id int(10) NOT NULL AUTO_INCREMENT, plaatsen int(10), vij binary(255) NOT NULL, PRIMARY KEY (id));
+CREATE TABLE restaurant_tafel (restaurant_id int(10) NOT NULL, tafel_id int(10) NOT NULL, PRIMARY KEY (restaurant_id, tafel_id));
+CREATE TABLE Locatie (id int(10) NOT NULL AUTO_INCREMENT, postcode int(10) NOT NULL, gemeente varchar(255) NOT NULL, straat varchar(255), huisNr int(10), PRIMARY KEY (id));
+ALTER TABLE reservatie ADD CONSTRAINT FKreservatie926936 FOREIGN KEY (contact_persoon_id) REFERENCES gebruiker (klant_nr);
+ALTER TABLE reservatie ADD CONSTRAINT FKreservatie619945 FOREIGN KEY (restaurant_id) REFERENCES restaurant (id);
+ALTER TABLE restaurant_tafel ADD CONSTRAINT FKrestaurant958591 FOREIGN KEY (restaurant_id) REFERENCES restaurant (id);
+ALTER TABLE restaurant_tafel ADD CONSTRAINT FKrestaurant604231 FOREIGN KEY (tafel_id) REFERENCES tafel (id);
+ALTER TABLE reservatie ADD CONSTRAINT FKreservatie942877 FOREIGN KEY (tafel_id) REFERENCES tafel (id);
+ALTER TABLE restaurant ADD CONSTRAINT FKrestaurant377822 FOREIGN KEY (Locatieid) REFERENCES Locatie (id);
+ALTER TABLE gebruiker ADD CONSTRAINT FKgebruiker871149 FOREIGN KEY (Locatieid) REFERENCES Locatie (id);

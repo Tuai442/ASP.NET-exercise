@@ -1,0 +1,115 @@
+# ASP.NET and Visual Studio generated files
+.vscode/
+.vs/
+bin/
+obj/
+PublishProfiles/
+*.user
+*.suo
+*.cache
+*.sln.docstates
+
+# ASP.NET Core
+**/bin/
+**/obj/
+**/*.log
+**/*.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+*.nuget.props
+*.nuget.targets
+Packages/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Visual Studio cache files
+.vscode/
+.vs/
+*.log
+ipch/
+*.sqlite
+
+# Resharper-specific files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider generated files
+.idea/
+
+# CodeRush specific
+.cr/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# macOS folder attributes
+.DS_Store
+
+# Mono auto generated files
+mono_crash.*
+
+# Rider
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Rider generated
+.idea/
+*.sln.iml
+
+# Miscellaneous
+node_modules/
+bower_components/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VSCode directory settings
+.vscode/

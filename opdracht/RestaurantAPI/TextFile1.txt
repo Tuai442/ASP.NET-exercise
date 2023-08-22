@@ -1,0 +1,65 @@
+
+== Databank Controle
+
+= Gebruiker tabel inorde
+= Restaurant tabel inorde
+= Locatie tabel inorde
+= Reservatie tabel inorde
+
+== Gebruiker Controller
+
+= Post Gebruiker / Registreer gebruiker - OK
+
+= Post Reservatie / Maak een reservatie - OK
+
+			= Controles 
+				- Geen reservatie in het verleden - OK
+				- Geen tafel beschikbaar		  - OK
+				- Reservatie niet op rond uur     - OK
+
+= Get Gebruiker							- OK
+
+= Get Restaurant Zoekdatum				- OK
+			
+			= Controles
+				- Tafels die bezet zijn worden niet getoond									  - OK
+				- Als het aantal plaatsen hoger ligt worden alleen de passende tafels getoond - OK
+
+= Get Restaurant Keuken / Locatie		- OK
+
+= Get Reservatie Id						- OK
+
+= Get Reservaties Begin / Eind datum	- OK
+
+= Put Gebruiker							- OK
+
+= Put Reservatie 
+
+			= Controles
+				- Kan niet updaten als er geen tafel zijn									  - OK
+				- Kan niet updaten als er geen tafel zijn dien voldoegn aan plaatsen 		  - OK
+				TODO : de zelvde persoon verlaat zijn reservatie met 30m
+
+== Restaurant Controller
+
+= Post Restaurant			- OK
+
+= Post Tafel				- OK
+
+= Get Restaurant op id		- OK
+
+= Get Reservatie op id		- OK
+
+= Update Restaurant			- OK
+
+			= Controles:
+				- Kan geen tafel plaatsen niet updaten wanneer hier een reservering is mee verboden in niet voldoet aan controle	- OK
+				- Regex controle																									- OK
+
+
+= Delete Restaurant			- OK
+
+= Delete tafel				- OK
+	
+			= Controles:
+				- Kan geen tafel deleten als hier een reservatie mee is gemaakt		- OK
